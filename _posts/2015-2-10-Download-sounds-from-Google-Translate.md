@@ -21,11 +21,12 @@ def wget(path: "", locale: "", phrase: "")
   end
 end
 ```
-Place the code in speech.rb, open irb (or pry), require the file by typing
 
+Place the code in speech.rb, open irb (or pry), require the file by typing
 ```ruby
 require '~/path/to/speech.rb'
 ```
+
 Execute the wget method with three valid parameters, for example:
 ```ruby
 wget(path: "~/Desktop/download.mp3", locale: "en", phrase: "Y'all need to use this code!")

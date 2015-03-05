@@ -9,7 +9,7 @@ Contributed the backend of a statistics panel today.
 Wrote complex, deep-nested queries for associated object data in Activerecord, for example
 
 ```ruby
-@base_query = Payment.joins(:order => {:page => :window}).in_daterange(@start_date, @end_date).where("windows.id = ?", window.id).where("provider = ?", @payment_system.provider)
+@base_query = Payment.joins(order: {page: :window}).in_daterange(@start_date, @end_date).where("windows.id = ?", window.id).where("provider = ?", @payment_system.provider)
 ```
 
 ![rake.jpg]({{ site.baseurl }}/images/mat.jpg)

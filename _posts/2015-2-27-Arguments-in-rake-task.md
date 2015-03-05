@@ -27,6 +27,19 @@ end
 Call with `rake with_hash` #=> John Smith
 Call with `rake with_hash[Chris,Brown]` #=> Chris Brown
 
+#### Bonus Method 3, anonymous argument hash
+```ruby
+desc "Bring it on, parameters!"
+task :infinite_parameters do |task, args| 
+    puts args.extras.count
+    args.extras.each do |params|
+        puts params
+    end         
+end
+```
+Call with `rake infinite_paramers['The','World','Is','Just','Awesome','Boomdeyada']`
+via http://stackoverflow.com/a/28654953/3319298
+
 ![rake.jpg]({{ site.baseurl }}/images/rake-04.jpg)
 
 

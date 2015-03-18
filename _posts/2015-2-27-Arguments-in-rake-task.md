@@ -30,7 +30,7 @@ Call with `rake with_hash[Chris,Brown]` #=> Chris Brown
 #### Bonus Method 3, anonymous argument hash
 ```ruby
 desc "Bring it on, parameters!"
-task :infinite_parameters do |task, args| 
+task infinite_parameters: :environment do |task, args| 
     puts args.extras.count
     args.extras.each do |params|
         puts params

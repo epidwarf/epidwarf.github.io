@@ -1,5 +1,5 @@
-# Augy's blog!
-#### Visit http://epigene.github.io
+# Augy's Dwarf Fortress blog!
+#### Visit http://epidwarf.github.io
 ## Made using Jekyll Now ([More here](http://epigene.github.io/Hello-World/))
 
 ### Adding new posts
